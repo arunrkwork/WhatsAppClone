@@ -36,6 +36,7 @@ import kapp.chat.utill.Prefs;
 
 public class SigninActivity extends BaseActivity implements View.OnClickListener {
 
+    // import class file
     // clear
     Prefs prefs = null;
     int OTP_VERIFIED = 0;
