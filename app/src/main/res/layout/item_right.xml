@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/lrtbp_10"
+    android:layout_marginBottom="@dimen/lrtbp_10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:background="@drawable/chat_bubble_outgoing"
+        android:paddingTop="@dimen/lrtbp_10"
+        android:paddingBottom="@dimen/lrtbp_10"
+        android:paddingLeft="@dimen/lrtbp_15"
+        android:paddingRight="@dimen/lrtbp_25"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/lrtbp_10"
+            android:layout_marginTop="@dimen/lrtbp_10"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user_24"
+            android:id="@+id/imgAttach"
+            android:layout_width="@dimen/wh_50"
+            android:layout_height="@dimen/wh_50" />
+        <TextView
+            android:layout_marginRight="@dimen/lrtbp_10"
+            android:layout_marginTop="@dimen/lrtbp_10"
+            android:layout_gravity="right"
+            android:text="right"
+            android:id="@+id/txtRightMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

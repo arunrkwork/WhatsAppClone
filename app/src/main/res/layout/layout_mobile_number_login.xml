@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_20"
+            android:padding="@dimen/lrtbp_20"
+            android:gravity="center"
+            android:text="Verify your phone number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:padding="@dimen/lrtbp_20"
+            android:gravity="center"
+            android:text="KChat will send an SMS message to verify your phone number. Enter your country code and phone number."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spCountry"
+            android:layout_marginRight="@dimen/lrtbp_20"
+            android:layout_marginLeft="@dimen/lrtbp_20"
+            android:padding="@dimen/lrtbp_10"
+            android:entries="@array/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_margin="@dimen/lrtbp_20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edCountryCode"
+                android:maxLength="3"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingRight="@dimen/lrtbp_10"
+                android:text="91"
+                android:drawableLeft="@drawable/ic_add_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edMobile"
+                android:maxLength="10"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:textColor="@color/textColorPrimary"
+                android:hint="phone number"
+                android:paddingRight="@dimen/lrtbp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/lrtbp_20"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:padding="@dimen/lrtbp_10"
+            android:textSize="@dimen/txt_16"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Error"
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSendOtp"
+            android:layout_marginBottom="@dimen/lrtbp_20"
+            android:textColor="@android:color/white"
+            android:text="NEXT"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/lrtbp_20"
+            android:layout_marginRight="@dimen/lrtbp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+     </LinearLayout>
+
+</RelativeLayout>

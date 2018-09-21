@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- sw800dp -->
+
+    <dimen name="croll_app_width">600dp</dimen>
+    <dimen name="croll_app_height">190dp</dimen>
+    <dimen name="croll_insbut_width">140dp</dimen>
+    <dimen name="croll_insbut_height">55dp</dimen>
+    <dimen name="but_height">80dp</dimen>
+
+
+    <dimen name="lrtbp_5">10dp</dimen>
+    <dimen name="lrtbp_10">25dp</dimen>
+    <dimen name="lrtbp_15">40dp</dimen>
+    <dimen name="lrtbp_20">20dp</dimen>
+    <dimen name="lrtbp_25">25dp</dimen>
+    <dimen name="lrtbp_30">200dp</dimen>
+
+    <dimen name="wh_1">3dp</dimen>
+    <dimen name="wh_2">5dp</dimen>
+    <dimen name="wh_35">70dp</dimen>
+    <dimen name="wh_40">100dp</dimen>
+    <dimen name="wh_45">80dp</dimen>
+    <dimen name="wh_50">120dp</dimen>
+    <dimen name="wh_60">160dp</dimen>
+    <dimen name="wh_100">100dp</dimen>
+    <dimen name="wh_65">105dp</dimen>
+    <dimen name="wh_75">75dp</dimen>
+    <dimen name="wh_80">80dp</dimen>
+    <dimen name="wh_150">380dp</dimen>
+    <dimen name="wh_300">760dp</dimen>
+    <dimen name="wh_240">260dp</dimen>
+    <dimen name="wh_120">180dp</dimen>
+    <dimen name="wh_340">820dp</dimen>
+    <dimen name="wh_20">30dp</dimen>
+    <dimen name="wh_180">280dp</dimen>
+    <dimen name="wh_200">200dp</dimen>
+    <dimen name="wh_70">120dp</dimen>
+    <dimen name="txt_10">16dp</dimen>
+    <dimen name="txt_12">20dp</dimen>
+    <dimen name="txt_15">25dp</dimen>
+    <dimen name="txt_16">30dp</dimen>
+    <dimen name="txt_17">31dp</dimen>
+    <dimen name="txt_18">32dp</dimen>
+    <dimen name="txt_20">35dp</dimen>
+    <dimen name="txt_24">40dp</dimen>
+    <dimen name="txt_22">34dp</dimen>
+    <dimen name="txt_25">40dp</dimen>
+    <dimen name="txt_50">80dp</dimen>
+
+</resources>

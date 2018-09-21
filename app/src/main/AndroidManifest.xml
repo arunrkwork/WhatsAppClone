@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kapp.chat">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme">
+        <activity android:name=".activities.SigninActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:theme="@style/Theme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".crop.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.MessagingActivity"
+            android:theme="@style/Theme"> 
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme" />
+
+        <service
+            android:name=".services.OnClearFromRecentService"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".services.NewMessageWatcherService"
+            android:stopWithTask="false" />
+
+        <activity android:name=".activities.ContactActivity" />
+        <activity
+            android:name=".activities.UserDetailActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".activities.ImageViewActivity"></activity>
+    </application>
+
+</manifest>

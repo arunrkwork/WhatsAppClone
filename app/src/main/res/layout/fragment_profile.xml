@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    tools:context="kapp.chat.fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/lrtbp_20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="@dimen/wh_120"
+                    android:layout_height="@dimen/wh_120"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/user_round"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_user" />
+
+                <ImageView
+                    android:id="@+id/imgCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgEdit"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/imgEdit"
+                    android:background="@drawable/round"
+                    android:padding="@dimen/lrtbp_10"
+                    android:src="@drawable/ic_photo_camera_black_24dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lrtbp_10"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/lrtbp_10"
+                    android:text="About You"
+                    android:textColor="@color/blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/lrtbp_10"
+                        android:text="NAME"
+                        android:textColor="@color/textColorPrimary"
+                        emojicon:emojiconSize="@dimen/txt_20"
+                        emojicon:emojiconUseSystemDefault="true" />
+
+
+                    <ImageView
+                        android:id="@+id/imgUserNameEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/lrtbp_10"
+                        android:paddingRight="@dimen/lrtbp_10"
+                        android:src="@drawable/ic_edit_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lrtbp_10"
+                        android:text="Hey there! I am using KChat"
+                        android:textColor="@color/textColorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/imgUserStatusEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/lrtbp_10"
+                        android:paddingRight="@dimen/lrtbp_10"
+                        android:src="@drawable/ic_edit_black_24dp" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/lrtbp_10"
+                    android:text="+91 98765 43210"
+                    android:textColor="@color/textColorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

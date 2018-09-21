@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kapp.chat.fragments.MessagingFragment">
+
+
+    <RelativeLayout
+        android:background="@drawable/chatbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_above="@+id/btm"
+            android:layout_alignParentTop="true"
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         <RelativeLayout
+            android:layout_marginBottom="@dimen/lrtbp_10"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/lrtbp_10"
+                android:layout_marginRight="@dimen/lrtbp_10"
+                android:orientation="horizontal"
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_message_background"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/emoji_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lrtbp_10"
+                        android:src="@drawable/ic_smile" />
+
+                    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                        android:layout_weight="1"
+                        android:hint="Type a message"
+                        android:background="@drawable/ed_message_background"
+                        android:id="@+id/emojicon_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        emojicon:emojiconSize="@dimen/txt_20" />
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:padding="@dimen/lrtbp_10"
+                        android:id="@+id/imgAttach"
+                        android:src="@drawable/ic_attach_file_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/submit_btn"
+                    emojicon:fabSize="mini"
+                    android:layout_marginLeft="@dimen/lrtbp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_send_white_24dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

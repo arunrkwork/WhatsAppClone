@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.SigninActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:background="@color/colorPrimary"
+            android:id="@+id/txtWelcome"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/lrtbp_30"
+            android:gravity="center"
+            android:text="Welcome to KChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/wall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginBottom="@dimen/lrtbp_30"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="@dimen/lrtbp_20"
+                android:gravity="center"
+                android:text="@string/terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnAgree"
+                android:layout_marginTop="@dimen/lrtbp_20"
+                android:textColor="@android:color/white"
+                android:text="AGREE AND CONTINUE"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/lrtbp_15"
+                android:layout_marginRight="@dimen/lrtbp_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
